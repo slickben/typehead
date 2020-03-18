@@ -12,14 +12,13 @@ $(function () {
 
             stateArr.push(value.alias);         
         });
-        console.log(stateArr)
+        console.log(stateArr) 
         searchState(stateArr);
     }});
 
     const searchState = (states) => {
         console.log(states)
          var optStates = new Bloodhound({
-
           datumTokenizer: Bloodhound.tokenizers.whitespace,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
           local: states
